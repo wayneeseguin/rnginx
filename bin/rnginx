@@ -1,0 +1,10 @@
+#! ruby
+# grab nginx config and parse it if given
+# otherwise simply create a new empty nginx config
+# That can be manipulated and then saved to a config file
+@config_file_name = ARGV[0].shift
+if @config_file_name > 0
+  if File.exist?(@config_file_name)
+  else
+  end
+end
